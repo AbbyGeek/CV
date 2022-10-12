@@ -6,7 +6,35 @@ hr {
     
 }
 
+.resumeBody{
+    background-color: salmon;
+    margin: 8% 5% 5%;
+    padding: 2%;
+}
 /* Contact */
+.contactInfo {
+    background-color:#fff;
+}
+
+.contactRow {
+    border: 3px solid white;
+}
+
+.contactIconBox {
+    background-color: #7F8084;
+    border: 3px solid white;
+    padding: .5rem;
+    width: auto;
+}
+
+.contactIcon {
+    color: #fff;
+}
+
+.contactInfoBox {
+    background-color: #A5A5A5;
+    border: 3px solid white;
+}
 
 /* Skills */
 
