@@ -30,6 +30,12 @@ hr:before {
     z-index: 1;
 }
 
+.vr{
+    border-left: 3px #555 solid;
+    width: auto !important;
+    margin: 20px 0 !important;
+}
+
 .resumeBody{
     background-color: #0F94D4;
     margin: 8% 5% 5%;
@@ -84,6 +90,12 @@ hr:before {
 .nameBox {
     background-color: #fff;
 }
+
+.nameTextBox {
+    text-align: right;
+    padding: 50px !important;
+}
+
 .profilePic {
     border-radius: 50%;
     border: 3px solid;
