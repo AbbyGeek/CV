@@ -1,118 +1,127 @@
 body {
-    text-align: left;
+  text-align: left;
+  background-image: url("../images/background.jpg");
 }
 div {
-    /* border: 1px solid; */
-    text-align: left;
+  /* border: 1px solid; */
+  text-align: left;
 }
 
 hr {
-    background-color: #555;
-    border: none;
-    display: block;
-    height: 4px;
-    overflow: visible;
-    position: relative;
-    width: 100%;
-    opacity: 1 !important;
-    height: 2px !important;
+  background-color: #555;
+  opacity: 1 !important;
+  height: 2px !important;
+  width: auto;
 }
 
-hr:before {
-    background-color: #0F94D4;
-    content: '';
-    display: block;
-    height: 8px;
-    left: 0;
-    position: absolute;
-    top: -3px;
-    width: 10%;
-    z-index: 1;
+hr.fancyHr {
+  border: none;
+  display: block;
+  height: 4px;
+  overflow: visible;
+  position: relative;
 }
 
-.vr{
-    border-left: 3px #555 solid;
-    width: auto !important;
-    margin: 20px 0 !important;
+hr.fancyHr:before {
+  background-color: #0f94d4;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: -3px;
+  width: 10%;
+  z-index: 1;
 }
 
-.resumeBody{
-    background-color: #0F94D4;
-    margin: 8% 5% 5%;
-    padding: 3%;
+.vr {
+  border-left: 3px #A5A5A5 solid;
+  width: auto !important;
+  margin: 20px 0 20px 20px !important;
 }
 
-.whiteBg {
-    background-color: #fff;
+.resumeBody {
+  background-color: #fff;
+  margin: 8% 5% 5%;
+  padding: 3%;
 }
+
 /* Contact */
 .contactInfo {
-    background-color:#fff;
+  background-color: #fff;
 }
 
 .contactRow {
-    border: 3px solid white;
 }
 
 .contactIconBox {
-    background-color: #7F8084;
-    border: 3px solid white;
-    padding: .5rem;
-    width: auto;
+  background-color: #7f8084;
+  border: 3px solid white;
+  padding: 0.5rem;
+  width: auto;
 }
 
 .contactIcon {
-    color: #fff;
+  color: #fff;
 }
 
 .contactInfoBox {
-    background-color: #A5A5A5;
-    border: 3px solid white;
+  background-color: #a5a5a5;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
 }
 
 /* Skills */
-.skillsBox {
-    background-color: #fff;
+.loadBar {
+  background-color: #a5a5a5 !important;
 }
 
-.skillsHead {
+.loadBarProg {
+  color: #fff !important;
+  background-color: #0F94D4 !important;
+  height: 5px;
+}
 
+.skillPercent {
+    text-align: right;
+    margin: 0;
 }
 
 /* Hobbies */
 
 /* References */
 .referencesBox {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Name */
 .nameBox {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .nameTextBox {
-    text-align: right;
-    padding: 50px !important;
+  text-align: right;
+  padding: 50px !important;
 }
 
 .profilePic {
-    border-radius: 50%;
-    border: 3px solid;
-    width: 250px;
+  border-radius: 50%;
+  border: 3px solid;
+  width: 250px;
 }
 
 /* About */
 .aboutMeBox {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Work */
 .workBox {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Education */
 .educationBox {
-    background-color: #fff;
+  background-color: #fff;
 }
