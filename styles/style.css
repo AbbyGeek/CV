@@ -35,7 +35,7 @@ hr.fancyHr:before {
 }
 
 .vr {
-  border-left: 3px #A5A5A5 solid;
+  border-left: 3px #555 solid;
   width: auto !important;
   margin: 20px 0 20px 20px !important;
 }
@@ -73,20 +73,30 @@ hr.fancyHr:before {
 }
 
 /* Skills */
-.loadBar {
-  background-color: #a5a5a5 !important;
-}
+.progBar {
+    background-color: #a5a5a5;
+    height: 8px !important;
+    position: relative;
+    margin-top: 0;
+    border-radius: 4px;
+  }
+  
+  .progBar:before {
+    background-color: #0f94d4;
+    content: "";
+    height: 8px;
+    position: absolute;
+    width: var(--percentage);
+  }
 
-.loadBarProg {
-  color: #fff !important;
-  background-color: #0F94D4 !important;
-  height: 5px;
-}
-
-.skillPercent {
+  .percent {
     text-align: right;
-    margin: 0;
+  }
+
+  .skillText {
+    margin-bottom: .25rem;
 }
+
 
 /* Hobbies */
 

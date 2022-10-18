@@ -21,7 +21,7 @@
     <!-- Font-Awesome -->
     <title>Abby Wessels</title>
   </head>
-  <body onload="move()">
+  <body onload="percentFill()">
     <div class="resumeBody">
       <div class="container text-center">
         <div class="row">
@@ -69,76 +69,75 @@
               <div class="skillsBox">
                 <h3 class="skillsHead">Skills</h3>
                 <hr class="fancyHr" />
-                <div>
-                  <div id="skillList">
-                    <div><!-- Skill -->
-                      <div class="row">
-                        <div id="HtmlCss" class="col-8">HTML/CSS</div>
-                        <div id="percent" class="col-4 skillPercent">80</div>
+                <div id="skillList">
+                  <div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="skillText">HTML/CSS</p>
                       </div>
-                      <div class="loadBar">
-                        <div
-                          id="HtmlCssBar"
-                          class="loadBarProg"
-                          style="width: 0%"
-                        ></div>
+                      <div class="col-6">
+                        <p class="percent skillText">85%</p>
                       </div>
                     </div>
-                    <div><!-- Skill -->
-                      <div class="row">
-                        <div id="HtmlCss" class="col-8">HTML/CSS</div>
-                        <div id="percent" class="col-4 skillPercent">80</div>
+                    <hr class="progBar" />
+                  </div>
+                  <div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="skillText">Bootstrap</p>
                       </div>
-                      <div class="loadBar">
-                        <div
-                          id="HtmlCssBar"
-                          class="loadBarProg"
-                          style="width: 0%"
-                        ></div>
+                      <div class="col-6">
+                        <p class="percent skillText">80%</p>
                       </div>
                     </div>
-                    <div><!-- Skill -->
-                      <div class="row">
-                        <div id="HtmlCss" class="col-8">HTML/CSS</div>
-                        <div id="percent" class="col-4 skillPercent">80</div>
+                    <hr class="progBar" />
+                  </div>
+                  <div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="skillText">Git</p>
                       </div>
-                      <div class="loadBar">
-                        <div
-                          id="HtmlCssBar"
-                          class="loadBarProg"
-                          style="width: 0%"
-                        ></div>
+                      <div class="col-6">
+                        <p class="percent skillText">75%</p>
                       </div>
                     </div>
+                    <hr class="progBar" />
+                  </div>
+                  <div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="skillText">CD/CI</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="percent skillText">90%</p>
+                      </div>
+                    </div>
+                    <hr class="progBar" />
+                  </div>
+                  <div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="skillText">Agile</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="percent skillText">90%</p>
+                      </div>
+                    </div>
+                    <hr class="progBar" />
                   </div>
                 </div>
-
-                <br />
-                <script>
-                  function move() {
-                    var elem = document.getElementById("HtmlCssBar");
-                    var percent = document.getElementById("percent");
-                    var finalPercent = percent.innerHTML;
-                    var width = 0;
-                    var id = setInterval(frame, 10);
-                    alert(document.getElementById("skillList").children.length);
-                    function frame() {
-                      if (width >= finalPercent) {
-                        clearInterval(id);
-                      } else {
-                        width++;
-                        elem.style.width = width + "%";
-                        percent.innerHTML = width * 1 + "%";
-                      }
-                    }
-                  }
-                </script>
-                <p>Bootstrap</p>
-                <p>Git</p>
-                <p>C#</p>
-                <p>CD/CI</p>
-                <p>Agile</p>
               </div>
+              <script>
+                function percentFill() {
+                  var skills = document.getElementById("skillList").children;
+                  for (var i = 0; i < skills.length; i++) {
+                    var percentage = skills[i].getElementsByClassName("percent")[0].innerHTML;
+                    var bar = skills[i].getElementsByClassName("progBar")[0];
+                    bar.setAttribute("style", "--percentage: " + percentage);
+                    console.log("test");
+                  }
+                }
+              </script>
             </section>
             <!-- Hobbies -->
             <section id="hobbies">
