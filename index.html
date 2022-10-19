@@ -25,44 +25,55 @@
     <div class="resumeBody">
       <div class="container text-center">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 leftBar">
             <!-- Contact -->
             <section id="contact">
-              <div class="contactInfo">
-                <div class="row contactRow">
+              <div class="contact">
+                <div class="row">
                   <div class="col-2 contactIconBox">
                     <i class="fa-solid fa-lg fa-phone contactIcon"></i>
                   </div>
-                  <div class="col-10 contactInfoBox"><p>231-510-3793</p></div>
+                  <div class="col-10 contactInfoBox">
+                    <p class="contactText">231-510-3793</p>
+                  </div>
                 </div>
-                <div class="row contactRow">
+                <div class="row">
                   <div class="col-2 contactIconBox">
                     <i class="fa-regular fa-lg fa-envelope contactIcon"></i>
                   </div>
                   <div class="col-10 contactInfoBox">
-                    <p>abbyrosewest@gmail.com</p>
+                    <p class="contactText">
+                      <a href="mailto:abbyrosewest@gmail.com"
+                        >abbyrosewest@gmail.com</a
+                      >
+                    </p>
                   </div>
                 </div>
-                <div class="row contactRow">
+                <div class="row">
                   <div class="col-2 contactIconBox">
                     <i class="fa-brands fa-lg fa-github contactIcon"></i>
                   </div>
                   <div class="col-10 contactInfoBox">
-                    <p>github.com/abbygeek</p>
-                    <p></p>
+                    <p class="contactText">
+                      <a
+                        class=""
+                        href="https://www.github.com/abbygeek"
+                        target="_blank"
+                        >github.com/abbygeek</a
+                      >
+                    </p>
                   </div>
                 </div>
-                <div class="row contactRow">
+                <div class="row">
                   <div class="col-2 contactIconBox">
                     <i class="fa-solid fa-lg fa-location-dot contactIcon"></i>
                   </div>
                   <div class="col-10 contactInfoBox">
-                    <p>Traverse City, Michigan</p>
-                    <p></p>
+                    <p class="contactText">Traverse City, Michigan</p>
                   </div>
                 </div>
-                <hr />
               </div>
+              <hr />
             </section>
             <!-- Skills -->
             <section id="skills">
@@ -131,40 +142,135 @@
                 function percentFill() {
                   var skills = document.getElementById("skillList").children;
                   for (var i = 0; i < skills.length; i++) {
-                    var percentage = skills[i].getElementsByClassName("percent")[0].innerHTML;
+                    var percentage =
+                      skills[i].getElementsByClassName("percent")[0].innerHTML;
                     var bar = skills[i].getElementsByClassName("progBar")[0];
                     bar.setAttribute("style", "--percentage: " + percentage);
                     console.log("test");
                   }
                 }
               </script>
+              <hr class="fancyHr" />
             </section>
             <!-- Hobbies -->
-            <section id="hobbies">
-              <div>Hobbies</div>
+            <h3>Hobbies</h3>
+            <section id="hobbies row">
+              <div class="mt-3">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link hobbyTab active" data-bs-toggle="tab" href="#tab1"
+                      ><img
+                        class="hobbyImg"
+                        src="images/roller-skates.png"
+                        alt="roller skates"
+                    /></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab2"
+                      ><img
+                        class="hobbyImg"
+                        src="images/wrench.png"
+                        alt="wrench"
+                    /></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab3"
+                      ><img
+                        class="hobbyImg"
+                        src="images/d20.png"
+                        alt="20 sided die"
+                      />
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab4"
+                      ><img
+                        class="hobbyImg"
+                        src="images/sewing-machine.png"
+                        alt="sewing machine"
+                      />
+                    </a>
+                  </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div id="tab1" class="tab-pane active">
+                    <br />
+                    <h4>Roller Derby</h4>
+                    <p>
+                      Skater for Detroit Roller Derby from 2018-2022 playing for
+                      the Devils Night Dames, Motor City Dissasembly Line and
+                      The Detroit All-Star team
+                    </p>
+                    <p>
+                      Currently skating for the Traverse City Toxic Cherries and
+                      am assisting in rebuilding our All-Star team post-covid.
+                    </p>
+                  </div>
+                  <div id="tab2" class="tab-pane fade">
+                    <br />
+                    <h4>Car Mechanics</h4>
+                    <p>
+                      Performing my own car maintinence and repairs whenever
+                      possible. Doing everything from oil changes and brake jobs
+                      to complete suspension replacements on my vehicles.
+                      Continually educating myself on best practices for new
+                      tasks and performing professional-level work on my
+                      vehicles.
+                    </p>
+                  </div>
+                  <div id="tab3" class="tab-pane fade">
+                    <br />
+                    <h4>Dungeons & Dragons</h4>
+                    <p>
+                      Six years of experience playing DnD as a player and dungeon
+                      master. Experience in organizing and leading several
+                      groups of individuals through various campaigns and
+                      overseeing scheduling and organization for the group.
+                    </p>
+                  </div>
+                  <div id="tab4" class="tab-pane fade">
+                    <br />
+                    <h4>Sewing and Embroidery</h4>
+                    <p>
+                      Currently in the process of launching an online store for
+                      embroidery and sewing products, providing affordable
+                      merchandise options for various roller derby teams across
+                      the country
+                    </p>
+                  </div>
+                </div>
+              </div>
             </section>
             <!-- References -->
             <section id="references">
-              <div class="referencesBox">
+              <div>
                 <h3>References</h3>
                 <hr class="fancyHr" />
                 <div>
                   <h4>Brian Wilson</h4>
-                  <p>Team Leader, Quicken Loans</p>
-                  <p>Phone: (734)718-0566</p>
-                  <p>Email: brianwilson@quickenloans.com</p>
+                  <div class="refInfo">
+                    <p>Team Leader, Quicken Loans</p>
+                    <p><b>Phone:</b> (734)718-0566</p>
+                    <p><b>Email:</b> brianwilson@quickenloans.com</p>
+                  </div>
                 </div>
                 <div>
                   <h4>Laura DeLaFe</h4>
-                  <p>Product Owner, Quicken Loans</p>
-                  <p>Phone: (786)439-9907</p>
-                  <p>Email: lauradelafe@quickenloans.com</p>
+                  <div class="refInfo">
+                    <p>Product Owner, Quicken Loans</p>
+                    <p><b>Phone:</b> (786)439-9907</p>
+                    <p><b>Email:</b> lauradelafe@quickenloans.com</p>
+                  </div>
                 </div>
                 <div>
                   <h4>Taylor Everts</h4>
-                  <p>Web Developer, Quicken Loans</p>
-                  <p>Phone: (989)743-0592</p>
-                  <p>Email: tayloreverts@quickenloans.com</p>
+                  <div class="refInfo">
+                    <p>Web Developer, Quicken Loans</p>
+                    <p><b>Phone:</b> (989)743-0592</p>
+                    <p><b>Email:</b> tayloreverts@quickenloans.com</p>
+                  </div>
                 </div>
               </div>
             </section>
@@ -173,7 +279,7 @@
           <div class="col-8">
             <!-- Name -->
             <section id="Name">
-              <div class="container nameBox">
+              <div class="container">
                 <div class="row">
                   <div class="col-7 nameTextBox">
                     <h1>ABBY<br />WESSELS</h1>

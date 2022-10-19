@@ -3,8 +3,15 @@ body {
   background-image: url("../images/background.jpg");
 }
 div {
-  /* border: 1px solid; */
   text-align: left;
+}
+
+a{
+    /* color: #fff !important; */
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: underline !important;
 }
 
 hr {
@@ -46,17 +53,23 @@ hr.fancyHr:before {
   padding: 3%;
 }
 
-/* Contact */
-.contactInfo {
-  background-color: #fff;
+.leftBar {
+    padding-right: 35px !important;
 }
 
-.contactRow {
+/* Contact */
+.contact {
+    padding: 0 12px;
+}
+
+.contactText {
+    color: #fff !important;
+    margin: 8px;
 }
 
 .contactIconBox {
   background-color: #7f8084;
-  border: 3px solid white;
+  border: 3px solid #fff;
   padding: 0.5rem;
   width: auto;
 }
@@ -67,12 +80,15 @@ hr.fancyHr:before {
 
 .contactInfoBox {
   background-color: #a5a5a5;
-  border-left: 3px solid white;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
 /* Skills */
+.skillsBox {
+    padding: 15px 0;
+}
 .progBar {
     background-color: #a5a5a5;
     height: 8px !important;
@@ -99,16 +115,17 @@ hr.fancyHr:before {
 
 
 /* Hobbies */
+.hobbyImg {
+    width: 25px;
+}
 
 /* References */
-.referencesBox {
-  background-color: #fff;
+.refInfo {
+    font-size: 0.9rem;
+    line-height: 1;
+    padding-bottom: 15px;
 }
-
 /* Name */
-.nameBox {
-  background-color: #fff;
-}
 
 .nameTextBox {
   text-align: right;
