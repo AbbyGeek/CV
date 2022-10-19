@@ -6,12 +6,12 @@ div {
   text-align: left;
 }
 
-a{
-    /* color: #fff !important; */
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-a:hover{
-    text-decoration: underline !important;
+
+a:hover {
+  text-decoration: underline !important;
 }
 
 hr {
@@ -41,6 +41,12 @@ hr.fancyHr:before {
   z-index: 1;
 }
 
+hr.simpleHr {
+  height: 6px !important;
+  background: #0f94d4;
+  width: 20%;
+}
+
 .vr {
   border-left: 3px #555 solid;
   width: auto !important;
@@ -54,17 +60,25 @@ hr.fancyHr:before {
 }
 
 .leftBar {
-    padding-right: 35px !important;
+  padding-right: 35px !important;
 }
 
 /* Contact */
 .contact {
-    padding: 0 12px;
+  padding: 0 12px;
 }
 
 .contactText {
-    color: #fff !important;
-    margin: 8px;
+  color: #fff !important;
+  margin: 8px;
+}
+
+.contactText a {
+  color: #fff;
+}
+
+.contactText a:hover {
+  color: #fff;
 }
 
 .contactIconBox {
@@ -87,43 +101,42 @@ hr.fancyHr:before {
 
 /* Skills */
 .skillsBox {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 .progBar {
-    background-color: #a5a5a5;
-    height: 8px !important;
-    position: relative;
-    margin-top: 0;
-    border-radius: 4px;
-  }
-  
-  .progBar:before {
-    background-color: #0f94d4;
-    content: "";
-    height: 8px;
-    position: absolute;
-    width: var(--percentage);
-  }
-
-  .percent {
-    text-align: right;
-  }
-
-  .skillText {
-    margin-bottom: .25rem;
+  background-color: #a5a5a5;
+  height: 10px !important;
+  position: relative;
+  margin-top: 0;
+  border-radius: 4px;
 }
 
+.progBar:before {
+  background-color: #0f94d4;
+  content: "";
+  height: 10px;
+  position: absolute;
+  width: var(--percentage);
+}
+
+.percent {
+  text-align: right;
+}
+
+.skillText {
+  margin-bottom: 0.25rem;
+}
 
 /* Hobbies */
 .hobbyImg {
-    width: 25px;
+  width: 25px;
 }
 
 /* References */
 .refInfo {
-    font-size: 0.9rem;
-    line-height: 1;
-    padding-bottom: 15px;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding-bottom: 15px;
 }
 /* Name */
 
