@@ -148,11 +148,7 @@ hr.simpleHr {
   text-align: right;
   padding: 50px !important;
 }
-
-.profilePic {
-  border-radius: 50%;
-  border: 4px solid;
-  vertical-align: middle;
+.profilePic{
 }
 
 /* About */
