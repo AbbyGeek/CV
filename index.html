@@ -26,13 +26,15 @@
       <div class="container text-center">
         <div class="row">
           <!-- Left Col -->
-          <div class="col-lg-3 order-lg-1 order-md-2">
+          <div class="col-lg-3 col-md-12 order-lg-1 order-md-2">
             <!-- Contact -->
             <section id="contact">
-              <div class="contact">
+              <div class="d-lg-inline d-md-none contact">
                 <div class="row gap-1 mb-1">
                   <div class="col-2 p-auto contactIconBox">
-                    <i class="mx-1 mt-3 fa-solid fa-lg fa-phone contactIcon"></i>
+                    <i
+                      class="mx-1 mt-3 fa-solid fa-lg fa-phone contactIcon"
+                    ></i>
                   </div>
                   <div class="col-9 contactInfoBox">
                     <p class="contactText">231-510-3793</p>
@@ -40,7 +42,9 @@
                 </div>
                 <div class="row gap-1 mb-1">
                   <div class="col-2 contactIconBox">
-                    <i class="mx-1 mt-3 fa-regular fa-lg fa-envelope contactIcon"></i>
+                    <i
+                      class="mx-1 mt-3 fa-regular fa-lg fa-envelope contactIcon"
+                    ></i>
                   </div>
                   <div class="col-9 contactInfoBox">
                     <p class="contactText">
@@ -51,8 +55,10 @@
                   </div>
                 </div>
                 <div class="row gap-1 mb-1">
-                  <div class="col-2  contactIconBox">
-                    <i class="mx-1 mt-3 fa-brands fa-lg fa-github contactIcon"></i>
+                  <div class="col-2 contactIconBox">
+                    <i
+                      class="mx-1 mt-3 fa-brands fa-lg fa-github contactIcon"
+                    ></i>
                   </div>
                   <div class="col-9 contactInfoBox">
                     <p class="contactText">
@@ -66,8 +72,10 @@
                   </div>
                 </div>
                 <div class="row gap-1 mb-1">
-                  <div class="col-2   contactIconBox">
-                    <i class="mx-1 mt-3 fa-solid fa-lg fa-location-dot contactIcon"></i>
+                  <div class="col-2 contactIconBox">
+                    <i
+                      class="mx-1 mt-3 fa-solid fa-lg fa-location-dot contactIcon"
+                    ></i>
                   </div>
                   <div class="col-9 contactInfoBox">
                     <p class="contactText">Traverse City, Michigan</p>
@@ -78,7 +86,7 @@
             <hr />
             <!-- Skills -->
             <section id="skills">
-              <div class="skillsBox">
+              <div class="col-lg-12 skillsBox">
                 <h3 class="skillsHead">Skills</h3>
                 <hr class="simpleHr" />
                 <div id="skillList">
@@ -138,23 +146,24 @@
                     <hr class="progBar" />
                   </div>
                 </div>
-              </div>
-              <script>
-                function percentFill() {
-                  var skills = document.getElementById("skillList").children;
-                  for (var i = 0; i < skills.length; i++) {
-                    var percentage =
-                      skills[i].getElementsByClassName("percent")[0].innerHTML;
-                    var bar = skills[i].getElementsByClassName("progBar")[0];
-                    bar.setAttribute("style", "--percentage: " + percentage);
-                    console.log("test");
+                <script>
+                  function percentFill() {
+                    var skills = document.getElementById("skillList").children;
+                    for (var i = 0; i < skills.length; i++) {
+                      var percentage =
+                        skills[i].getElementsByClassName("percent")[0]
+                          .innerHTML;
+                      var bar = skills[i].getElementsByClassName("progBar")[0];
+                      bar.setAttribute("style", "--percentage: " + percentage);
+                      console.log("test");
+                    }
                   }
-                }
-              </script>
+                </script>
+              </div>
             </section>
             <!-- Hobbies -->
             <section id="hobbies">
-              <div>
+              <div class="col-lg-12">
                 <h3>Hobbies</h3>
                 <hr class="simpleHr" />
                 <div class="mt-3">
@@ -253,31 +262,33 @@
             </section>
             <!-- References -->
             <section id="references">
-              <div>
+              <div class="col-lg-12">
                 <h3>References</h3>
                 <hr class="simpleHr" />
-                <div>
-                  <h4>Brian Wilson</h4>
-                  <div class="refInfo">
-                    <p>Team Leader, Quicken Loans</p>
-                    <p><b>Phone:</b> (734)718-0566</p>
-                    <p><b>Email:</b> brianwilson@quickenloans.com</p>
+                <div class="row">
+                  <div class="col-lg-12 col-md-4">
+                    <h4>Brian Wilson</h4>
+                    <div class="refInfo">
+                      <p class="lh-base">Team Leader<br>Quicken Loans</p>
+                      <p><b>Phone:</b> (734)718-0566</p>
+                      <p><b>Email:</b> brianwilson@quickenloans.com</p>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h4>Laura DeLaFe</h4>
-                  <div class="refInfo">
-                    <p>Product Owner, Quicken Loans</p>
-                    <p><b>Phone:</b> (786)439-9907</p>
-                    <p><b>Email:</b> lauradelafe@quickenloans.com</p>
+                  <div class="col-lg-12 col-md-4">
+                    <h4>Laura DeLaFe</h4>
+                    <div class="refInfo">
+                      <p class="lh-base">Product Owner<br>Quicken Loans</p>
+                      <p><b>Phone:</b> (786)439-9907</p>
+                      <p><b>Email:</b> lauradelafe@quickenloans.com</p>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h4>Taylor Everts</h4>
-                  <div class="refInfo">
-                    <p>Web Developer, Quicken Loans</p>
-                    <p><b>Phone:</b> (989)743-0592</p>
-                    <p><b>Email:</b> tayloreverts@quickenloans.com</p>
+                  <div class="col-lg-12 col-md-4">
+                    <h4>Taylor Everts</h4>
+                    <div class="refInfo">
+                      <p class="lh-base">Software Engineer<br>Quicken Loans</p>
+                      <p><b>Phone:</b> (989)743-0592</p>
+                      <p><b>Email:</b> tayloreverts@quickenloans.com</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -297,7 +308,9 @@
                     <p class="mb-2">www.github.com/abbygeek</p>
                   </div>
                   <!-- Name -->
-                  <div class="col-lg-7 col-md-3 order-lg-1 order-md-2 text-end my-auto">
+                  <div
+                    class="col-lg-7 col-md-3 order-lg-1 order-md-2 text-end my-auto"
+                  >
                     <h1>ABBY<br />WESSELS</h1>
                     <h3>WEB DESIGNER</h3>
                   </div>
