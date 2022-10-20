@@ -85,7 +85,7 @@ hr.simpleHr {
 .contactIconBox {
   background-color: #7f8084;
 }
-@media only screen and (max-width: 1460px) {
+@media only screen and (max-width: 1340px) {
     .contactIconBox {
         display: none;
     }
@@ -147,8 +147,6 @@ hr.simpleHr {
 .nameTextBox {
   text-align: right;
   padding: 50px !important;
-}
-.profilePic{
 }
 
 /* About */
