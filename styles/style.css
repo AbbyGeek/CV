@@ -50,6 +50,7 @@ hr.simpleHr {
   border-left: 3px #555 solid;
   width: auto !important;
   margin: 20px 0 20px 20px !important;
+  padding-left: 0 !important;
 }
 
 .resumeBody {
@@ -63,7 +64,7 @@ hr.simpleHr {
 }
 
 .alignR {
-    text-align: right;
+    text-align: right !important;
 }
 
 /* Contact */
@@ -150,8 +151,8 @@ hr.simpleHr {
 
 .profilePic {
   border-radius: 50%;
-  border: 3px solid;
-  width: 250px;
+  border: 4px solid;
+  vertical-align: middle;
 }
 
 /* About */
