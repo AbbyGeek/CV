@@ -5,10 +5,6 @@ div {
   text-align: left;
 }
 
-a {
-  text-decoration: none !important;
-}
-
 a:hover {
   text-decoration: underline !important;
 }
@@ -53,34 +49,6 @@ hr.simpleHr {
   padding-left: 0 !important;
 }
 
-.resumeBody {
-  background-color: #fff;
-  margin: 8% 5% 5%;
-  padding: 3%;
-}
-
-
-.alignR {
-    text-align: right !important;
-}
-
-/* Contact */
-.contact {
-  padding: 12px;
-}
-
-.contactText {
-  color: #fff !important;
-  margin: 8px;
-}
-
-.contactText a {
-  color: #fff;
-}
-
-.contactText a:hover {
-  color: #fff;
-}
 
 .contactIconBox {
   background-color: #7f8084;
@@ -120,14 +88,6 @@ hr.simpleHr {
   width: var(--percentage);
 }
 
-.percent {
-  text-align: right;
-}
-
-.skillText {
-  margin-bottom: 0.25rem;
-}
-
 /* Hobbies */
 .hobbyImg {
   width: 25px;
@@ -136,27 +96,4 @@ hr.simpleHr {
 /* References */
 .refInfo {
   font-size: 0.9rem;
-  line-height: 1;
-  padding-bottom: 15px;
-}
-/* Name */
-
-.nameTextBox {
-  text-align: right;
-  padding: 50px !important;
-}
-
-/* About */
-.aboutMeBox {
-  background-color: #fff;
-}
-
-/* Work */
-.workBox {
-  background-color: #fff;
-}
-
-/* Education */
-.educationBox {
-  background-color: #fff;
 }
