@@ -104,9 +104,6 @@ hr.simpleHr {
 }
 
 /* Skills */
-.skillsBox {
-  padding: 15px 0;
-}
 .progBar {
   background-color: #a5a5a5;
   height: 10px !important;
